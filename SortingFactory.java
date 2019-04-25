@@ -2,7 +2,7 @@
 
 public class SortingFactory {
 
-	public final String defaultAlgorithm = "InsertionSort";  // If an improper algorithm name is given, which should be used?
+	public final String defaultAlgorithm = "HybridSort";  // If an improper algorithm name is given, which should be used?
 	public boolean useDefault = false;   // ... and should it be done?
 
 	
@@ -28,11 +28,8 @@ public class SortingFactory {
 		if (lowercaseAlgoName.contains("merge")) {
 			return new MergeSort();
 		}
-		if (lowercaseAlgoName.contains("quick")) {
-			return new QuickSort();
-		}
-		if (lowercaseAlgoName.contains("insertion")) {
-			return new InsertionSort();
+		if (lowercaseAlgoName.contains("hybrid")) {
+			return new HybridSort();
 		}
 		
 		// Invalid algorithm name specified. Use default?

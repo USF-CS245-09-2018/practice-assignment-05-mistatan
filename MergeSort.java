@@ -4,6 +4,7 @@ public class MergeSort implements SortingAlgorithm{
 		merge_sort(a,0,a.length-1);
 	}
 	public void merge_sort(int[] a, int left, int right){
+
 		if(left < right){
 			int mid = (left + right)/2;
 			merge_sort(a, left, mid);
